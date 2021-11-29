@@ -44,7 +44,6 @@ const app = new Vue({
             } else {
                 return '';
             }
-
         },
 
         invertDone: function (element) {

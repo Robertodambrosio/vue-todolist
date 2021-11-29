@@ -16,8 +16,8 @@
      <main>
         <div class="todolist">
             <input v-model='inputText' placeholder="Inserisci una Todo" @keyup.enter="addTodo">
-            <button @click="addTodo" >Aggiungi</button>
-            <ul v-if="todos.length > 0">
+            <button @click="addTodo">Aggiungi</button>
+            <ul v-if="todo.length > 0">
                 <li v-for="(element, i) in todo" :class="lineTodo(element)" @click="invertDone(element)">{{element.text}}<i class="fas fa-trash-alt" @click="removeTodo(i)"></i></li>
             </ul>
             <h2 v-else>Non ci sono todos</h2>

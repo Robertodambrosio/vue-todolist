@@ -14,13 +14,18 @@
 
      </header>   
      <main>
-        <div class="todolist">
+        <div class="container">
+            <h1>ToDoList</h1>
+            <div class="container-input">
             <input v-model='inputText' placeholder="Inserisci una Todo" @keyup.enter="addTodo">
             <button @click="addTodo">Aggiungi</button>
+            </div>
+            <div class="container-todo">
             <ul v-if="todo.length > 0">
                 <li v-for="(element, i) in todo" :class="lineTodo(element)" @click="invertDone(element)">{{element.text}}<i class="fas fa-trash-alt" @click="removeTodo(i)"></i></li>
             </ul>
             <h2 v-else>Non ci sono todos</h2>
+            </div>
         </div>
      </main>
 

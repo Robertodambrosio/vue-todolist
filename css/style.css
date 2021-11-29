@@ -5,11 +5,72 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .sbarrato {
     text-decoration: line-through;
 }
 
-.todolist {
-    width: 100%;
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: red;
+}
+
+.container-input {
+    padding: 30px 0;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.container-input input{
+    padding: 10px 5px;
+    border: none;
+    border: 1px solid lightgrey;
+}
+
+.container-input button {
+    padding: 10px 8px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+
+.container-todo {
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto
+}
+
+.container-todo ul{
+    list-style: none;
+}
+
+.container-todo li  {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.container-todo li:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+}
+
+.container-todo li i {
+    float: right;
+    cursor: pointer;
 }
